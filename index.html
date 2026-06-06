@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Attendance System</title>
@@ -6,17 +7,24 @@
 </head>
 <body>
 
-<h1>Attendance System</h1>
+    <h1>Attendance System</h1>
 
-<input type="text" id="roll" placeholder="Enter Roll Number">
+    <input type="text" id="roll" placeholder="Enter Roll Number">
 
-<button onclick="markAttendance()">
-    Submit
-</button>
+    <button onclick="markAttendance()">
+        Submit
+    </button>
 
-<p id="result"></p>
+    <button onclick="generateQR()">
+        Generate QR
+    </button>
 
-<script src="script.js"></script>
+    <p id="result"></p>
+
+    <div id="qrcode"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
